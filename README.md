@@ -1,3 +1,8 @@
+#포트폴리오 사이트 만들기 프로젝트
+
+리액트 사용 및 학습하기 위한 프로젝트
+프론트엔드 개발자 포트폴리오로 사용
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
