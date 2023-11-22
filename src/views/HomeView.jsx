@@ -5,15 +5,15 @@ import Main from "../components/Main";
 import Intro from "../components/Intro";
 
 const HomeView = () => {
-    return (
-        <>
-            <Header />
-            <Main>
-                <Intro />
-            </Main>
-            <Footer />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Main>
+          <Intro />
+      </Main>
+      <Footer />
+    </>
+  )
 }
 
 export default HomeView;
