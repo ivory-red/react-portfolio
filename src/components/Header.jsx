@@ -25,6 +25,15 @@ const headerNav = [
 
 const Header = () => {
   const [activeNav, setActive] = useState("home");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const setNavActive = (title) => {
+    setActive(title)
+  };
+
+  const toggleMode = () => {
+    setIsDarkMode((prevIsDarkMode) => !prevIsDarkMode);
+  };
 
   return (
     <header id="header" role="banner">
@@ -41,11 +50,15 @@ const Header = () => {
         <ul>
           {headerNav.map((nav, key) => (
             <li key={key} className={activeNav === nav.title ? "active" : ""}>
-              <a href={nav.url} className="manrope">{nav.title}</a>
+              {/* 화살표 함수로 래핑함으로써 해당 함수는 클릭 할 떄만 변할 수 있도록 설정 */}
+              <a href="#none" className="manrope" onClick={() => setNavActive(nav.title)}>{nav.title}</a>
             </li>
           ))}
         </ul>
       </nav>
+      <div className="mode">
+        <a href="#none" className="manrope" onClick={toggleMode}>{isDarkMode === false ? "dark" : "light"} mode.</a>
+      </div>
     </header>
   )
 };
