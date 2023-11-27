@@ -1,6 +1,5 @@
 #header {
   @include position-fixed;
-  height: 100%;
   z-index: 9999;
 }
 
@@ -21,9 +20,11 @@
       letter-spacing: -0.8px;
       line-height: 30px;
       color: var(--black100);
+
       &:first-child {
         position: relative;
         margin-bottom: 5px;
+
         &:after {
           display: block;
           content: "";
@@ -41,13 +42,14 @@
 }
 
 .header__nav {
-  position: absolute;
+  position: fixed;
+  z-index: 9999;
   left: 0;
   top: 0;
   width: 38px;
   height: 100%;
   @include flex-center;
-  
+
   ul {
     @include flex-center;
     flex-direction: row-reverse;
@@ -59,31 +61,27 @@
       margin: 0 15px;
       transition: all 0.3s;
 
-      &:hover, &.active {
-        &:before {
-          display: block;
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          width: 13px;
-          height: 1px;
-          background: var(--black100);
-        }
-      }
+
 
       a {
         font-size: 14px;
         color: var(--black100);
+        cursor: pointer;
+
+        &:hover,
+        &.active {
+          &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 13px;
+            height: 1px;
+            background: var(--black100);
+          }
+        }
       }
     }
   }
-}
-
-.mode {
-  position: fixed;
-  right: 82px;
-  bottom: 43px;
-  transform: rotate(90deg);
-  transform-origin: 100% 100%;
 }

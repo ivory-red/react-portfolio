@@ -9,12 +9,78 @@
 // section
 @import "section/header";
 @import "section/intro";
+@import "section/career";
+@import "section/education";
+@import "section/about";
+@import "section/footer";
 
 // common
 .inner {
   padding-left: 82px;
   padding-right: 82px;
 }
+
+.section {
+  position: relative;
+}
+
+.space {
+  position: absolute;
+  left: 0;
+  top: -160px;
+  height: 100%;
+}
+
+.section__inner {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--black400);
+}
+
+.section__area {
+  position: relative;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.title__area {
+  margin-bottom: 70px;
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 35px;
+    height: 5px;
+    background: var(--black100);
+  }
+}
+
+.img__dropdown {
+  transform: rotate(180deg);
+}
+
+.mt__0 {
+  margin-top: 0 !important;
+}
+
+
 .t__center {
   text-align: center;
 }

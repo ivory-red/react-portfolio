@@ -1,0 +1,40 @@
+.about {
+  .about__area {
+    display: flex;
+
+    >img {
+      margin-right: 60px;
+    }
+
+    .name {
+      font-size: 30px;
+    }
+
+    .text {
+      margin-top: 14px;
+      font-size: 14px;
+      line-height: 160%;
+      color: var(--black100);
+    }
+  }
+
+  .skills {
+    display: flex;
+    margin-top: 16px;
+
+    ul {
+      display: flex;
+      padding: 14px 0 0 36px;
+
+      li {
+        margin-right: 20px;
+        text-align: center;
+
+        .text {
+          margin-top: 5px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
