@@ -10,11 +10,11 @@
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: 0 0;
 
-    @include desktop {
+    @include screen-max-1799 {
       left: 70px;
     }
 
-    @include non-desktop {
+    @include screen-max-1799 {
       position: relative;
       top: 0;
       left: 0;
@@ -28,53 +28,83 @@
   .text__title__area {
     @include flex-between;
     margin: 40px 0 20px;
+
+    @include screen-max-1023 {
+      margin: 30px 0 8px;
+    }
+
+    @include screen-max-640 {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 
   .career__title {
     font-size: 36px;
     font-weight: bold;
 
-    @include desktop {
+    @include screen-max-1799 {
       font-size: 28px;
+    }
+
+    @include screen-max-1023 {
+      font-size: 22px;
+    }
+
+    @include screen-max-767 {
+      font-size: 18px;
     }
 
     span {
       font-size: 16px;
 
-      @include desktop {
+      @include screen-max-1799 {
         font-size: 14px;
       }
-    }
-  }
 
-  .arrow__link {
-    font-size: 14px;
-    letter-spacing: -0.03em;
-
-    @include desktop {
-      font-size: 12px;
-    }
-
-    img {
-      padding-left: 5px;
-
-      @include desktop {
-        width: 20px;
+      @include screen-max-767 {
+        font-size: 12px;
       }
     }
   }
 
   .arrow__link {
     display: inline-block;
+    font-size: 14px;
+    letter-spacing: -0.03em;
     color: var(--black100);
+
+    @include screen-max-1799 {
+      font-size: 12px;
+    }
+
+    @include screen-max-767 {
+      font-size: 11px;
+    }
+
+    @include screen-max-640 {
+      margin-top: 8px;
+    }
+
+    img {
+      padding-left: 5px;
+
+      @include screen-max-1799 {
+        width: 20px;
+      }
+    }
   }
 
   .text__area {
     font-size: 14px;
     color: var(--black200);
 
-    @include desktop {
+    @include screen-max-1799 {
       font-size: 13px;
+    }
+
+    @include screen-max-767 {
+      font-size: 12px;
     }
 
     .text__title {

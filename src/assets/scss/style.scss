@@ -19,9 +19,19 @@
   padding-left: 82px;
   padding-right: 82px;
 
-  @include desktop {
+  @include screen-max-1799 {
     padding-left: 40px;
     padding-right: 40px;
+  }
+
+  @include screen-max-640 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include screen-max-500 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
@@ -32,7 +42,7 @@
 .space {
   position: absolute;
   left: 0;
-  top: -160px;
+  top: -100px;
   height: 100%;
 }
 
@@ -44,9 +54,14 @@
   padding-bottom: 120px;
   border-bottom: 1px solid var(--black400);
 
-  @include non-desktop {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  @include screen-max-1023 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include screen-max-640 {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -58,14 +73,36 @@
   padding-left: 160px;
   padding-right: 160px;
 
-  @include non-desktop {
+  @include screen-max-1799 {
+    padding-right: 120px;
+  }
+
+  @include screen-max-1023 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include screen-max-640 {
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  @include screen-max-500 {
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 .title__area {
   margin-bottom: 70px;
+
+  @include screen-max-1023 {
+    margin-bottom: 32px;
+  }
+
+  @include screen-max-640 {
+    margin-bottom: 32px;
+  }
 }
 
 .title {
@@ -75,8 +112,12 @@
   font-size: 30px;
   line-height: 41px;
 
-  @include desktop {
+  @include screen-max-1799 {
     font-size: 24px;
+  }
+
+  @include screen-max-640 {
+    font-size: 20px;
   }
 
   &:after {
