@@ -35,3 +35,22 @@
   top: 0;
   width: 100%;
 }
+
+
+@mixin desktop {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin non-desktop {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+// @mixin non-desktop {
+//   @media screen and (max-width: 1023px) {
+//     @content;
+//   }
+// }

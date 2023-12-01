@@ -10,6 +10,10 @@ footer {
       font-size: 36px;
       font-weight: bold;
       color: var(--black);
+
+      @include desktop {
+        font-size: 30px;
+      }
     }
 
     p {

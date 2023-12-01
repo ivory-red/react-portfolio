@@ -9,6 +9,18 @@
     display: inline-block;
     transform: rotate(-90deg) translateX(-100%);
     transform-origin: 0 0;
+
+    @include desktop {
+      left: 70px;
+    }
+
+    @include non-desktop {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      margin-bottom: 32px;
+    }
   }
 }
 
@@ -22,8 +34,16 @@
     font-size: 36px;
     font-weight: bold;
 
+    @include desktop {
+      font-size: 28px;
+    }
+
     span {
       font-size: 16px;
+
+      @include desktop {
+        font-size: 14px;
+      }
     }
   }
 
@@ -31,8 +51,16 @@
     font-size: 14px;
     letter-spacing: -0.03em;
 
+    @include desktop {
+      font-size: 12px;
+    }
+
     img {
       padding-left: 5px;
+
+      @include desktop {
+        width: 20px;
+      }
     }
   }
 
@@ -44,6 +72,10 @@
   .text__area {
     font-size: 14px;
     color: var(--black200);
+
+    @include desktop {
+      font-size: 13px;
+    }
 
     .text__title {
       margin-bottom: 4px;
