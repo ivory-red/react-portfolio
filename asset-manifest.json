@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.3350fe89.css",
+    "main.js": "/react-portfolio/static/js/main.afbd866b.js",
+    "static/media/cheongnyun.svg": "/react-portfolio/static/media/cheongnyun.33283f226f384bbdd227962412034027.svg",
+    "static/media/sgfco.svg": "/react-portfolio/static/media/sgfco.0602d35e366ba992eff4071f79dd7e16.svg",
+    "static/media/yeonan.svg": "/react-portfolio/static/media/yeonan.de82caaffb41e5436049a058c48e24b2.svg",
+    "static/media/kimgane.svg": "/react-portfolio/static/media/kimgane.f0a2a27b6efc9c911f66bc5bee80dc0b.svg",
+    "static/media/dailybeer.svg": "/react-portfolio/static/media/dailybeer.a9a3aa023eb71ad88ad43c7d9ecfaf25.svg",
+    "static/media/hanchon.svg": "/react-portfolio/static/media/hanchon.bc99683dfec866c1c461b22e8adf77ba.svg",
+    "static/media/profile_img.svg": "/react-portfolio/static/media/profile_img.45bac4b62f0071218fd0a41eeb6d61b4.svg",
+    "static/media/logo_react.svg": "/react-portfolio/static/media/logo_react.95a0cd39ccc5626f251ca3b46d0e08aa.svg",
+    "static/media/logo_java.svg": "/react-portfolio/static/media/logo_java.c77fcc9146c60bd2ad846312ce5de0ff.svg",
+    "static/media/logo_sass.svg": "/react-portfolio/static/media/logo_sass.ae04c155035fec78cdcbd50b38d4f41d.svg",
+    "static/media/ic_graduation.svg": "/react-portfolio/static/media/ic_graduation.e460e9ae27a887efe5fb5a3d11f1f1e2.svg",
+    "static/media/ic_uxui.svg": "/react-portfolio/static/media/ic_uxui.bb707ed974d0af7eefdeea80fc5dadb4.svg",
+    "static/media/logo_css.svg": "/react-portfolio/static/media/logo_css.840800ef221aca364c81e5bc209fb1af.svg",
+    "static/media/logo_html.svg": "/react-portfolio/static/media/logo_html.6ce92c84426006b47fd86eb7affee34c.svg",
+    "static/media/logo_js.svg": "/react-portfolio/static/media/logo_js.37a05addf3f355a8ad349d29ad08d5bb.svg",
+    "static/media/logo_tomcat.svg": "/react-portfolio/static/media/logo_tomcat.0fa4bdf91fed20082e9d9fdddfb118e8.svg",
+    "static/media/ic_school.svg": "/react-portfolio/static/media/ic_school.06e3b10c90b9b1908786b96a48bca731.svg",
+    "static/media/logo_oracle.svg": "/react-portfolio/static/media/logo_oracle.4d7b12d3c328fcdb56999f19cad69224.svg",
+    "static/media/ic_coding.svg": "/react-portfolio/static/media/ic_coding.cc09f25a7c6be8836fc96ad53d4344f7.svg",
+    "static/media/logo_gsap.svg": "/react-portfolio/static/media/logo_gsap.7aefcd5b45161453f98cf139d7c4579b.svg",
+    "index.html": "/react-portfolio/index.html",
+    "static/media/logo_vue.svg": "/react-portfolio/static/media/logo_vue.123389cf0aa7e702fa32f4a5678ddb8b.svg",
+    "static/media/ic_arrow.svg": "/react-portfolio/static/media/ic_arrow.8727506507734a42e4e06cc99be846cb.svg",
+    "main.3350fe89.css.map": "/react-portfolio/static/css/main.3350fe89.css.map",
+    "main.afbd866b.js.map": "/react-portfolio/static/js/main.afbd866b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3350fe89.css",
+    "static/js/main.afbd866b.js"
+  ]
+}
