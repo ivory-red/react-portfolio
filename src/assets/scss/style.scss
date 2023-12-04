@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+// setting
+@import "setting/reset";
+@import "setting/mixin";
+@import "setting/vars";
+@import "setting/fonts";
+
+// section
+@import "section/header";
+@import "section/intro";
+@import "section/career";
+@import "section/education";
+@import "section/about";
+@import "section/footer";
+
+// common
+.inner {
+  padding-left: 82px;
+  padding-right: 82px;
+
+  @include screen-max-1799 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include screen-max-640 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include screen-max-500 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.section {
+  position: relative;
+}
+
+.space {
+  position: absolute;
+  left: 0;
+  top: -119px;
+  height: 100%;
+
+  @include screen-max-1799 {
+    top: -105px;
+  }
+
+  @include screen-max-1023 {
+    top: -65px;
+  }
+}
+
+.section__inner {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid var(--black400);
+
+  @include screen-max-1023 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @include screen-max-640 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.section__area {
+  position: relative;
+  max-width: 1520px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 160px;
+  padding-right: 160px;
+
+  @include screen-max-1799 {
+    padding-right: 120px;
+  }
+
+  @include screen-max-1023 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include screen-max-640 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include screen-max-500 {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.title__area {
+  margin-bottom: 70px;
+
+  @include screen-max-1023 {
+    margin-bottom: 32px;
+  }
+
+  @include screen-max-640 {
+    margin-bottom: 32px;
+  }
+}
+
+.title {
+  display: inline-block;
+  position: relative;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+
+  @include screen-max-1799 {
+    font-size: 24px;
+  }
+
+  @include screen-max-640 {
+    font-size: 20px;
+  }
+
+  &:after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30px;
+    height: 4px;
+    background: var(--black100);
+  }
+}
+
+.img__dropdown {
+  transform: rotate(180deg);
+}
+
+.mt__0 {
+  margin-top: 0 !important;
+}
+
+
+.t__center {
+  text-align: center;
+}

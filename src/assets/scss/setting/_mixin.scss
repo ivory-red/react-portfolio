@@ -1,0 +1,79 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flex-size-none {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+// 중앙 정렬
+@mixin position-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 상단 고정
+@mixin position-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+@mixin screen-max-1799 {
+  @media screen and (max-width: 1799px) {
+    @content;
+  }
+}
+
+@mixin screen-max-1200 {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin screen-max-1023 {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin screen-max-991 {
+  @media screen and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin screen-max-767 {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin screen-max-640 {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin screen-max-500 {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
