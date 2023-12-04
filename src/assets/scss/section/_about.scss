@@ -1,36 +1,4 @@
 .about {
-  .space {
-    top: -160px;
-
-    //   @include screen-max-1023 {
-    //     top: -300px;
-    //   }
-
-    //   @include screen-max-991 {
-    //     top: -340px;
-    //   }
-
-    //   @media screen and (max-width: 977px) {
-    //     top: -300px;
-    //   }
-
-    //   @media screen and (max-width: 824px) {
-    //     top: -320px;
-    //   }
-
-    //   @media screen and (max-width: 767px) {
-    //     top: -230px;
-    //   }
-
-    //   @media screen and (max-width: 640px) {
-    //     top: -110px;
-    //   }
-
-    //   @media screen and (max-width: 616px) {
-    //     top: -90px;
-    //   }
-  }
-
   .about__area {
     display: flex;
     align-items: flex-start;

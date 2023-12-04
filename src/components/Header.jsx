@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-scroll";
 import MediaQuery from "react-responsive";
 
 // 이미지
 import HamburgerMenu from "../assets/img/icons/ic_ham_menu.png"
+import Close from "../assets/img/icons/ic_close.png"
 
 const headerNav = [
   {
@@ -21,17 +21,54 @@ const headerNav = [
 ]
 
 const Header = () => {
-  const [scroll, setScroll] = useState('');
+  const [scroll, setScroll] = useState("");
+  const [sectionActive, setSectionActive] = useState("home")
+  const [mobileNavActive, setMobileNavActive] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY < 15) {
-        setScroll('');
-      } else {
-        setScroll('scrolled')
+  // 스크롤 중일때 위치/active 파악
+  const handleScroll = () => {
+    if (window.scrollY < 15) {
+      setScroll('');
+    } else {
+      setScroll('scrolled')
+    }
+
+    headerNav.forEach((nav) => {
+      const element = document.getElementById(nav.title)
+      const rect = element.getBoundingClientRect()
+      const windowHeightHalf = (window.innerHeight / 2) - 100
+
+      if (rect.top <= windowHeightHalf && rect.bottom > windowHeightHalf) {
+        setSectionActive(nav.title)
+
+        return
       }
     })
+  }
+
+  // useEffect: behaves similar to componentDidMount (fire after render)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+
+    headerNav.forEach((nav) => {
+      const el = document.getElementById(nav.title)
+
+      nav.height = el.clientHeight
+    })
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
   })
+
+  // 네비게이션 스크롤
+  const scrollTo = (to) => {
+    const element = document.getElementById(to)
+
+    element.scrollIntoView({ behavior: "smooth" })
+
+    setMobileNavActive(false)
+  };
 
   return (
     <>
@@ -49,21 +86,22 @@ const Header = () => {
           </MediaQuery>
 
           <MediaQuery maxWidth={1023}>
-            <div className="mobile__nav__menu">
-              <img src={HamburgerMenu} alt="" width="20" />
+            <div className="mobile__nav__menu" onClick={() => setMobileNavActive(!mobileNavActive)}>
+              {mobileNavActive === false ? (
+                <img src={HamburgerMenu} alt="" width="20" />
+              ) : (
+                <img src={Close} alt="닫기" width="12" />
+              )}
             </div>
           </MediaQuery>
         </div>
 
         <MediaQuery maxWidth={1023}>
-          <div className="mobile__nav__list">
+          <div className={`mobile__nav__list ${mobileNavActive === true ? "active" : ""}`}>
             <ul>
               {headerNav.map((nav, key) => (
                 <li key={key}>
-                  {/* 화살표 함수로 래핑함으로써 해당 함수는 클릭 할 떄만 변할 수 있도록 설정 */}
-                  <Link className="manrope" activeClass="active" to={nav.title} spy={true} smooth={true}>
-                    {nav.title}
-                  </Link>
+                  <a href="#none" className={sectionActive === nav.title ? "active" : ""} onClick={() => scrollTo(nav.title)}>{nav.title}</a>
                 </li>
               ))}
             </ul>
@@ -75,10 +113,7 @@ const Header = () => {
             <ul>
               {headerNav.map((nav, key) => (
                 <li key={key}>
-                  {/* 화살표 함수로 래핑함으로써 해당 함수는 클릭 할 떄만 변할 수 있도록 설정 */}
-                  <Link className="manrope" activeClass="active" to={nav.title} spy={true} smooth={true}>
-                    {nav.title}
-                  </Link>
+                  <a href="#none" className={sectionActive === nav.title ? "active" : ""} onClick={() => scrollTo(nav.title)}>{nav.title}</a>
                 </li>
               ))}
             </ul>

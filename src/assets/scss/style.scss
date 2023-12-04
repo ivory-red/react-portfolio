@@ -42,8 +42,16 @@
 .space {
   position: absolute;
   left: 0;
-  top: -100px;
+  top: -119px;
   height: 100%;
+
+  @include screen-max-1799 {
+    top: -105px;
+  }
+
+  @include screen-max-1023 {
+    top: -65px;
+  }
 }
 
 .section__inner {
