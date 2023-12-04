@@ -4,13 +4,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeView from "./views/HomeView";
 
 const App = () => {
-    return (
+  return (
     <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomeView />} />
-        </Routes>
+      <Routes>
+        <Route path="/react-portfolio" element={<HomeView />} />
+      </Routes>
     </BrowserRouter>
-    );
+  );
 };
 
 export default App;
