@@ -67,8 +67,18 @@ const Career = () => {
                   </div>
                 </div> */}
                 <Swiper
-                  spaceBetween={32}
-                  slidesPerView={3.5}
+                  spaceBetween={18}
+                  slidesPerView={1.5}
+                  breakpoints={{
+                    500: {
+                      spaceBetween: 24,
+                      slidesPerView: 2.5
+                    },
+                    768: {
+                      spaceBetween: 32,
+                      slidesPerView: 3.5
+                    }
+                  }}
                 >
                   <SwiperSlide>
                     <div className="img__area">
@@ -96,7 +106,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 

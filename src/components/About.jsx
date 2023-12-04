@@ -27,10 +27,10 @@ const About = () => {
             <img src={profileImg} alt="" />
             <div className="about__text__area">
               <p className="name nanum">박상아</p>
-              <p className="text nanum">(웹퍼블리싱 경력 2년 + 프론트엔드 개발 경력 2년 4개월) 웹 퍼블리싱 경력이 있는 프론트엔드 개발자 입니다.</p>
-              <p className="text nanum">TEL: 010-3281-0676<br />EMAIL: sept1st@naver.com</p>
+              <p className="text sub__title__text nanum t__center__m">(웹퍼블리싱 경력 2년 + 프론트엔드 개발 경력 2년 4개월) 웹 퍼블리싱 경력이 있는 프론트엔드 개발자 입니다.</p>
+              <p className="text nanum t__center__m">TEL: 010-3281-0676<br />EMAIL: sept1st@naver.com</p>
               <div className="skills">
-                <p className="text nanum">MAIN SKILLS:<br />(업무 활용 가능)</p>
+                <p className="text nanum t__center__m">MAIN SKILLS:<br />(업무 활용 가능)</p>
                 <ul>
                   <li>
                     <img src={vue} alt="" />
@@ -59,7 +59,7 @@ const About = () => {
                 </ul>
               </div>
               <div className="skills">
-                <p className="text nanum">OTHER SKILLS:<br />(사용해봤어요)</p>
+                <p className="text nanum t__center__m">OTHER SKILLS:<br />(사용해봤어요)</p>
                 <ul>
                   <li>
                     <img src={react} alt="" />
