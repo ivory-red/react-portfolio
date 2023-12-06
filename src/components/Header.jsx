@@ -73,6 +73,7 @@ const Header = () => {
   return (
     <>
       <header id="header" role="banner" className={`header ${scroll}`}>
+        {/* 탑 헤더 영역 */}
         <div className="header__inner inner">
           <h1 className="logo">
             <a href="#blank" className="manrope">spark.</a>
@@ -88,7 +89,7 @@ const Header = () => {
           <MediaQuery maxWidth={1023}>
             <div className="mobile__nav__menu" onClick={() => setMobileNavActive(!mobileNavActive)}>
               {mobileNavActive === false ? (
-                <img src={HamburgerMenu} alt="" width="20" />
+                <img src={HamburgerMenu} alt="메뉴" width="20" />
               ) : (
                 <img src={Close} alt="닫기" width="12" />
               )}
@@ -96,6 +97,7 @@ const Header = () => {
           </MediaQuery>
         </div>
 
+        {/* 모바일 네비 */}
         <MediaQuery maxWidth={1023}>
           <div className={`mobile__nav__list ${mobileNavActive === true ? "active" : ""}`}>
             <ul>
@@ -108,6 +110,7 @@ const Header = () => {
           </div>
         </MediaQuery>
 
+        {/* PC 네비 */}
         <MediaQuery minWidth={1024}>
           <nav className="header__nav" role="navigation" aria-label="메인 메뉴">
             <ul>
