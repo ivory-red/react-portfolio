@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.3350fe89.css",
-    "main.js": "/react-portfolio/static/js/main.b0c5ebd5.js",
+    "main.js": "/react-portfolio/static/js/main.3856b397.js",
     "static/media/cheongnyun.svg": "/react-portfolio/static/media/cheongnyun.33283f226f384bbdd227962412034027.svg",
     "static/media/sgfco.svg": "/react-portfolio/static/media/sgfco.0602d35e366ba992eff4071f79dd7e16.svg",
     "static/media/yeonan.svg": "/react-portfolio/static/media/yeonan.de82caaffb41e5436049a058c48e24b2.svg",
@@ -26,10 +26,10 @@
     "static/media/logo_vue.svg": "/react-portfolio/static/media/logo_vue.123389cf0aa7e702fa32f4a5678ddb8b.svg",
     "static/media/ic_arrow.svg": "/react-portfolio/static/media/ic_arrow.8727506507734a42e4e06cc99be846cb.svg",
     "main.3350fe89.css.map": "/react-portfolio/static/css/main.3350fe89.css.map",
-    "main.b0c5ebd5.js.map": "/react-portfolio/static/js/main.b0c5ebd5.js.map"
+    "main.3856b397.js.map": "/react-portfolio/static/js/main.3856b397.js.map"
   },
   "entrypoints": [
     "static/css/main.3350fe89.css",
-    "static/js/main.b0c5ebd5.js"
+    "static/js/main.3856b397.js"
   ]
 }
