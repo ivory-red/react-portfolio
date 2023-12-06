@@ -18,6 +18,7 @@ const Career = () => {
       <div className="section__inner">
         <div className="section__area career__area">
           <h4 className="title manrope">career</h4>
+          {/* 더커머스 이력 */}
           <div className="career__content">
             <div className="text__title__area mt__0">
               <p className="career__title manrope">The Commerce <span>(프론트엔드 2021.03 - 2023.07)</span></p>
@@ -38,6 +39,7 @@ const Career = () => {
               </ul>
             </div>
           </div>
+          {/* 뷰3 이력 */}
           <div className="career__content">
             <div className="text__title__area">
               <p className="career__title manrope">View3 <span>(웹 퍼블리셔 2017.09 - 2019.11)</span></p>
@@ -54,18 +56,13 @@ const Career = () => {
                   <li>
                     HTML, CSS, JavaScript, JQuery
                   </li>
+                  <li>
+                    웹 표준 준수, 크로스 브라우징
+                  </li>
                 </ul>
               </div>
+              {/* 스와이퍼 영역 */}
               <div className="swiper__area">
-                {/* <div className="swiper__area__hover">
-                  <div className="swipe">
-                    <p>swipe</p>
-                    <p className="manrope">
-                      <span><i>&lt;</i><i>&lt;</i><i>&lt;</i></span>
-                      <span><i>&gt;</i><i>&gt;</i><i>&gt;</i></span>
-                    </p>
-                  </div>
-                </div> */}
                 <Swiper
                   spaceBetween={18}
                   slidesPerView={1.5}
@@ -86,7 +83,7 @@ const Career = () => {
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
-                    <img src={kimgane} alt="" width="100%" />
+                    <img src={kimgane} alt="김가네" width="100%" />
                   </SwiperSlide>
                   <SwiperSlide>
                     <img src={cheongnyun} alt="청년다방" width="100%" />
