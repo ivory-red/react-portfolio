@@ -1,17 +1,19 @@
 import React from "react";
 
 //이미지
-import profileImg from "../assets/img/about/profile_img.svg"
-import vue from "../assets/img/logos/logo_vue.svg"
-import html from "../assets/img/logos/logo_html.svg"
-import css from "../assets/img/logos/logo_css.svg"
-import sass from "../assets/img/logos/logo_sass.svg"
-import javaScript from "../assets/img/logos/logo_js.svg"
-import gsap from "../assets/img/logos/logo_gsap.svg"
-import react from "../assets/img/logos/logo_react.svg"
-import java from "../assets/img/logos/logo_java.svg"
-import oracle from "../assets/img/logos/logo_oracle.svg"
-import tomcat from "../assets/img/logos/logo_tomcat.svg"
+import profileImg from "../assets/img/about/profile_img.svg";
+import vue from "../assets/img/logos/logo_vue.svg";
+import next from "../assets/img/logos/logo_next.png";
+import html from "../assets/img/logos/logo_html.svg";
+import css from "../assets/img/logos/logo_css.svg";
+import sass from "../assets/img/logos/logo_sass.svg";
+import tailwind from "../assets/img/logos/logo_tailwind.png";
+import javaScript from "../assets/img/logos/logo_js.svg";
+import gsap from "../assets/img/logos/logo_gsap.svg";
+import react from "../assets/img/logos/logo_react.svg";
+import java from "../assets/img/logos/logo_java.svg";
+import oracle from "../assets/img/logos/logo_oracle.svg";
+import tomcat from "../assets/img/logos/logo_tomcat.svg";
 
 const About = () => {
   return (
@@ -28,15 +30,39 @@ const About = () => {
             <div className="about__text__area">
               {/* 개인 정보 */}
               <p className="name nanum">박상아</p>
-              <p className="text sub__title__text nanum t__center__m">(웹퍼블리싱 경력 2년 + 프론트엔드 개발 경력 2년 4개월) 웹 퍼블리싱 경력이 있는 프론트엔드 개발자 입니다.</p>
-              <p className="text nanum t__center__m">TEL: 010-3281-0676<br />EMAIL: sept1st@naver.com</p>
+              <p className="text sub__title__text nanum t__center__m">
+                (웹퍼블리싱 경력 2년 + 프론트엔드 개발 경력 3년 2개월) 웹
+                퍼블리싱 경력이 있는 프론트엔드 개발자 입니다.
+              </p>
+              <p className="text nanum t__center__m">
+                TEL: 010-3281-0676
+                <br />
+                EMAIL: sept1st@naver.com
+              </p>
               {/* 업무 활용 스킬 */}
               <div className="skills">
-                <p className="text nanum t__center__m">MAIN SKILLS:<br />(업무 활용 가능)</p>
+                <p className="text nanum t__center__m">
+                  MAIN SKILLS:
+                  <br />
+                  (업무 활용 가능)
+                </p>
                 <ul>
                   <li>
                     <img src={vue} alt="Vue.js" />
                     <p className="text nanum">Vue.js</p>
+                  </li>
+                  <li>
+                    <img src={react} alt="React.js" />
+                    <p className="text nanum">React.js</p>
+                  </li>
+                  <li>
+                    <img
+                      src={next}
+                      alt="Next.js"
+                      width={48}
+                      style={{ padding: "9px 0" }}
+                    />
+                    <p className="text nanum">Next.js</p>
                   </li>
                   <li>
                     <img src={html} alt="HTML" />
@@ -51,6 +77,15 @@ const About = () => {
                     <p className="text nanum">SASS</p>
                   </li>
                   <li>
+                    <img
+                      src={tailwind}
+                      alt="Tailwind CSS"
+                      width={48}
+                      style={{ padding: "9px 0" }}
+                    />
+                    <p className="text nanum">Tailwind CSS</p>
+                  </li>
+                  <li>
                     <img src={javaScript} alt="JavaScript" />
                     <p className="text nanum">JavaScript</p>
                   </li>
@@ -62,12 +97,12 @@ const About = () => {
               </div>
               {/* 사용해 본 스킬 */}
               <div className="skills">
-                <p className="text nanum t__center__m">OTHER SKILLS:<br />(사용해 봤어요)</p>
+                <p className="text nanum t__center__m">
+                  OTHER SKILLS:
+                  <br />
+                  (사용해 봤어요)
+                </p>
                 <ul>
-                  <li>
-                    <img src={react} alt="React.js" />
-                    <p className="text nanum">React.js</p>
-                  </li>
                   <li>
                     <img src={react} alt="React Native" />
                     <p className="text nanum">React Native</p>
@@ -91,7 +126,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default About;
